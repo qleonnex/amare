@@ -1,0 +1,28 @@
+.hero {
+	@apply relative max-xl:static flex justify-between;
+	@apply max-xl:flex-col;
+}
+
+.left {
+	@apply mt-[269px] mb-[256px];
+	@apply max-2xl:mb-[204px] max-xl:mb-[300px] max-xl:flex max-xl:flex-col max-xl:items-center max-sm:mb-[700px] max-sm:mt-[136px] max-[500px]:mb-[500px];
+	
+	& > p {
+		@apply text-[34px] mb-[14px];
+		@apply max-2xl:text-[26px] max-xl:text-center max-xl:text-[34px] max-lg:text-[26px] max-sm:text-[22px] max-[500px]:text-[18px];
+	}
+	
+	& > h1 {
+		@apply max-w-[732px] text-primary text-[64px] font-bold mb-[48px];
+		@apply max-2xl:text-[50px] max-xl:text-center max-xl:text-[64px] max-lg:text-[50px] max-sm:text-[35px] max-sm:max-w-[398px] max-[500px]:text-[40px];
+	}
+}
+
+.image {
+	@apply absolute -top-[118px] right-0;
+	@apply max-2xl:max-w-[900px] max-xl:hidden;
+}
+
+.image_mob {
+	@apply absolute -z-10 w-screen left-0 top-20 max-sm:block sm:hidden max-[500px]:top-52 max-[466px]:top-72;
+}

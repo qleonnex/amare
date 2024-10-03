@@ -1,0 +1,3 @@
+.layout {
+	@apply grid grid-rows-[116px_1fr_229px] h-[112svh];
+}

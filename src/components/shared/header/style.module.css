@@ -1,0 +1,15 @@
+.icon {
+	@apply size-[999px];
+}
+
+.header {
+	@apply max-w-full;
+}
+
+.header_inner {
+	@apply flex items-center gap-6 mt-9 max-sm:justify-center;
+}
+
+.name {
+	@apply text-primary text-[24px] max-md:text-[20px] max-sm:text-[18px];
+}

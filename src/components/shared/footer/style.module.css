@@ -1,0 +1,19 @@
+.footer {
+	@apply flex justify-between mt-[115px] max-lg:flex-col-reverse max-lg:gap-[41px] max-lg:items-center;
+}
+
+.left {
+	@apply flex flex-col max-w-[359px];
+	
+	& > h3 {
+		@apply text-lg max-lg:text-center;
+	}
+	
+	& > span {
+		@apply text-white/70 mt-[18px] max-lg:text-center;
+	}
+}
+
+.email {
+	@apply inline-block text-lg hover:text-white/80 transition duration-300;
+}
