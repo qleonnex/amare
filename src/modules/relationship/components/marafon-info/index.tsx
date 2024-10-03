@@ -4,6 +4,11 @@ import { ToMarafon } from "@/modules/relationship/sections/hero/components/to-ma
 import { Card } from "@/components/ui/card";
 import { createPortal } from "react-dom";
 
+let documents = null;
+if (typeof document !== "undefined") {
+	documents = document;
+}
+
 export const MarafonInfo = () => {
 	return createPortal(
 		
@@ -21,6 +26,6 @@ export const MarafonInfo = () => {
 					</Card>
 				</Container>
 			</div>,
-		document.body
+		documents?.body
 	)
 }
