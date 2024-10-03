@@ -1,5 +1,5 @@
 .inner {
-	@apply flex flex-col items-center mt-[141px] mb-[144px];
+	@apply flex flex-col items-center mt-[141px];
 }
 
 .cards {
