@@ -16,7 +16,6 @@ export const RelationshipPage = () => {
 	return (
 		<div>
 			<Hero/>
-			<Info className="-mb-10"/>
 			<Useful/>
 			<div className="flex justify-center mt-6">
 				<ToMarafon variant="light"/>

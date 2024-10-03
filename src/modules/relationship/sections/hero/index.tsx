@@ -3,6 +3,7 @@ import { ToMarafon } from "@/modules/relationship/sections/hero/components/to-ma
 import { Marck_Script } from "next/font/google";
 import Image from "next/image";
 import { Container } from "@/components/shared/container";
+import { Info } from "@/modules/relationship/sections/info";
 
 const marckScript = Marck_Script({
 	weight: ["400"],
@@ -14,6 +15,7 @@ export const Hero = () => {
 		<Container>
 			<div className={cs.hero}>
 				<div className={cs.left}>
+					<Info className="mb-10"/>
 					<p className={marckScript.className}>Рина Лазар, практикующий психолог и коуч</p>
 					<h1>Как найти своего мужчину. Причины одиночества</h1>
 					<ToMarafon variant="light"/>

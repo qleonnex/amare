@@ -4,8 +4,8 @@
 }
 
 .left {
-	@apply mt-[269px] mb-[256px];
-	@apply max-2xl:mb-[204px] max-xl:mb-[300px] max-xl:flex max-xl:flex-col max-xl:items-center max-sm:mb-[700px] max-sm:mt-[136px] max-[500px]:mb-[500px];
+	@apply mt-[150px] mb-[204px];
+	@apply max-2xl:mb-[153px] max-xl:mb-[150px] max-xl:flex max-xl:flex-col max-xl:items-center max-sm:mb-[700px] max-sm:mt-[70px] max-[500px]:mb-[500px];
 	
 	& > p {
 		@apply text-[34px] mb-[14px];
@@ -24,5 +24,5 @@
 }
 
 .image_mob {
-	@apply absolute -z-10 w-screen left-0 top-20 max-sm:block sm:hidden max-[500px]:top-52 max-[466px]:top-72;
+	@apply absolute -z-10 w-screen left-0 top-40 max-sm:block sm:hidden max-[500px]:top-64 max-[466px]:top-96;
 }
