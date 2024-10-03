@@ -1,5 +1,5 @@
 .main {
-	@apply flex items-end w-screen h-[11svh] sticky bottom-0 pb-10 max-sm:p-5;
+	@apply flex items-end w-screen h-[11svh] sticky bottom-0 pb-10 max-sm:pb-5;
 }
 
 .info {
