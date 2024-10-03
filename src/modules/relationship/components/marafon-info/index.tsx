@@ -1,3 +1,5 @@
+"use client";
+
 import { Container } from "@/components/shared/container";
 import cs from "./style.module.css";
 import { ToMarafon } from "@/modules/relationship/sections/hero/components/to-marafon";
