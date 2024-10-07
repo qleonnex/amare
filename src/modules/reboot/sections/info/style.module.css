@@ -1,0 +1,28 @@
+.info {
+	@apply !bg-primary relative z-50 flex justify-center items-center gap-6 p-[22px] rounded-xl text-black/80 border-4 border-second;
+	box-shadow: 0px 0px 46px 3px rgba(0,0,0,0.17);
+	@apply max-sm:p-[16px];
+}
+
+.left {
+	@apply flex flex-col justify-center items-center text-center;
+	
+	& h4 {
+		@apply text-[28px] font-semibold;
+		@apply max-lg:text-[24px] max-sm:text-[20px];
+	}
+	
+	& p {
+		@apply flex items-center text-[24px] font-medium;
+		@apply max-lg:text-[20px];
+		
+		&:not(:last-child)::after {
+			content: "";
+			@apply inline-block bg-black/80 size-[3px] rounded-full mx-[6px];
+		}
+	}
+	
+	& .left_bottom {
+		@apply flex items-center opacity-70;
+	}
+}

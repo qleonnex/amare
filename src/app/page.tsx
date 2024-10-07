@@ -1,13 +1,18 @@
-import { Card } from "@/components/ui/card";
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function RootPage() {
+	const router = useRouter();
+	
+	useEffect(() => {
+		router.replace("/relationship")
+	}, [router]);
+	
 	return (
 		<>
-			<Card>
-				<div className="p-16">
-					hello
-				</div>
-			</Card>
+		
 		</>
 	);
 }
