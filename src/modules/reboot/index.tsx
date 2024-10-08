@@ -33,7 +33,6 @@ export const RebootPage = () => {
 			<div className="flex justify-center mt-6">
 				<ToMarafon variant="light"/>
 			</div>
-			{/*<MarafonInfo />*/}
 		</div>
 	);
 }

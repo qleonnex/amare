@@ -3,7 +3,7 @@ import { ToMarafon } from "@/modules/relationship/sections/hero/components/to-ma
 import { Marck_Script } from "next/font/google";
 import Image from "next/image";
 import { Container } from "@/components/shared/container";
-import { Info } from "@/modules/relationship/sections/info";
+import { Info } from "@/modules/reboot/sections/info";
 
 const marckScript = Marck_Script({
 	weight: ["400"],
