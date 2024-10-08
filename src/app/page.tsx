@@ -11,8 +11,6 @@ export default function RootPage() {
 	}, [router]);
 	
 	return (
-		<>
-		
-		</>
+		<></>
 	);
 }
