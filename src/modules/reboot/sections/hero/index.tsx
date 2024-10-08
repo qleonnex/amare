@@ -1,5 +1,5 @@
 import cs from "./style.module.css";
-import { ToMarafon } from "@/modules/relationship/sections/hero/components/to-marafon";
+import { ToMarafon } from "@/modules/reboot/components/to-marafon";
 import { Marck_Script } from "next/font/google";
 import Image from "next/image";
 import { Container } from "@/components/shared/container";
