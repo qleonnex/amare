@@ -1,6 +1,6 @@
+import { Container } from '@/components/shared/container'
 import { Card } from '@/components/ui/card'
 import { Title } from '@/components/ui/title'
-import { Container } from 'postcss'
 import cs from "./style.module.css"
 
 export const Useful = () => {
