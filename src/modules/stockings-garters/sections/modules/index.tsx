@@ -1,7 +1,9 @@
 "use client"
 
-import { Container } from '@/components/shared'
-import { Card, Icon, Title } from '@/components/ui'
+import { Container } from '@/components/shared/container'
+import { Card } from '@/components/ui/card'
+import { Icon } from '@/components/ui/icon'
+import { Title } from '@/components/ui/title'
 import { useSlider } from './hook'
 import cs from "./style.module.css"
 

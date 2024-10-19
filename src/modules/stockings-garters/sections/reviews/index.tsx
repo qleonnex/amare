@@ -1,12 +1,13 @@
 "use client"
 
-import { Container } from '@/components/shared'
-import { Icon, Title } from '@/components/ui'
 import Image from 'next/image'
 import { useContext, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Swiper as SwiperType } from 'swiper/types'
 
+import { Container } from '@/components/shared/container'
+import { Icon } from '@/components/ui/icon'
+import { Title } from '@/components/ui/title'
 import { OpenerContext } from '@/provider/OpenerProvider'
 import { Controller } from 'swiper/modules'
 import cs from "./style.module.css"

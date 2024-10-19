@@ -1,6 +1,6 @@
 import { Container } from '@/components/shared/container'
 
-import { Button } from '@/components/ui'
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import cs from "./style.module.css"
 

@@ -1,4 +1,4 @@
-import { Container } from '@/components/shared'
+import { Container } from '@/components/shared/container'
 import cs from './style.module.css'
 
 export const Problems = () => {
