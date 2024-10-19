@@ -1,4 +1,4 @@
-import cs from "./style.module.css";
+import cs from "./style.module.css"
 
 interface LogoProps {
 	path: string;
@@ -9,7 +9,7 @@ interface LogoProps {
 	className?: string;
 }
 
-export const Icon = ({
+const Icon = ({
 	path,
 	size = "24px",
 	width,
@@ -33,3 +33,5 @@ export const Icon = ({
 		></div>
 	);
 }
+
+export default Icon;

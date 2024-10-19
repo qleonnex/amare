@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 
-import { Icon } from '@/components/ui/icon'
+import Icon from '@/components/ui/icon'
 import { useToMarafon } from './hook'
 
 let windows = null;
