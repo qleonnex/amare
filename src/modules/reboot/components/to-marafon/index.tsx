@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Icon } from "@/components/ui/icon";
-import { useEffect, useState } from "react";
-import { useToMarafon } from "./hook";
+import { Button } from "@/components/ui/button"
+import { Icon } from "@/components/ui/icon/index"
+import { useEffect, useState } from "react"
+import { useToMarafon } from "./hook"
 
 let windows = null;
 if (typeof window !== "undefined") {
