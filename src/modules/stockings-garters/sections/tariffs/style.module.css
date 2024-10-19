@@ -1,0 +1,58 @@
+.inner {
+	@apply flex flex-col items-center mt-[142px];
+}
+
+.cards {
+	@apply mt-[42px] flex items-center justify-center gap-[46px] flex-wrap max-2xl:gap-[80px];
+}
+
+.card {
+	@apply relative z-10 w-[441px] flex flex-col items-center h-[740px] bg-no-repeat bg-top text-[#1F1F1F] px-[46px] text-center bg-contain max-sm:w-[386px] max-sm:h-[640px] max-sm:px-[20px];
+
+	& > h1 {
+		@apply text-[40px] font-bold mt-[30px] max-sm:text-[30px];
+	}
+
+	& > ul {
+		@apply flex flex-col gap-[10px] items-center mt-[20px] text-[30px] font-bold max-sm:text-[26px];
+	}
+
+	& > .price {
+		@apply flex flex-col text-[46px] font-bold text-[#C68615] mt-[20px] max-sm:mt-[40px];
+
+		& > span {
+			@apply line-through text-[#FF5A5A] leading-9;
+		}
+	}
+
+	& > span {
+		@apply block text-[21px] font-bold text-[#444444] mt-[20px];
+	}
+
+	& > button {
+		@apply absolute h-[90px] bottom-0 w-[327px] rounded-[24px] text-[32px] font-bold flex items-center justify-center transition duration-300 max-sm:h-[80px] max-sm:w-[280px];
+		background: linear-gradient(90deg, rgba(218,186,129,1) 31%, rgba(233,211,174,1) 54%, rgba(218,186,129,1) 77%);
+
+		&::after {
+			content: "";
+			@apply absolute -z-10 h-[98px] w-[333px] rounded-[27px] max-sm:h-[87px] max-sm:w-[288px];
+			background: linear-gradient(180deg, rgba(237,213,171,1) 0%, rgba(165,137,87,1) 100%);
+		}
+
+		&:hover {
+			box-shadow: 0px -9px 31px 0px rgba(218,186,129,0.5);
+		}
+	}
+}
+
+.card:nth-child(1) {
+	background-image: url("/images/tarif-1.png");
+}
+
+.card:nth-child(2) {
+	background-image: url("/images/tarif-2.png");
+}
+
+.card:nth-child(3) {
+	background-image: url("/images/tarif-3.png");
+}

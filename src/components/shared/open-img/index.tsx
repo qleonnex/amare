@@ -29,12 +29,12 @@ export const OpenImg = ({ src, isOpen, setIsOpen }: OpenImgProps) => {
 	function close(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
 		e.stopPropagation();
 		setIsOpen(false)
-		document.body.style.overflow = "visible"
+		document.body.style.overflowY = "visible"
 	}
 
 	useEffect(() => {
 		if (isOpen)
-			document.body.style.overflow = "hidden"
+			document.body.style.overflowY = "hidden"
 	}, [isOpen])
 
 	if (!isOpen) return;

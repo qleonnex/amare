@@ -1,0 +1,13 @@
+.cards {
+	@apply grid grid-cols-2 gap-[30px] mt-[52px];
+	@apply max-md:grid-cols-1;
+}
+
+.card {
+	@apply grid place-content-center py-[30px] px-6 md:last:col-span-2;
+	
+	& h4 {
+		@apply text-[30px] font-medium text-center text-black/80;
+		@apply max-sm:text-[22px];
+	}
+}

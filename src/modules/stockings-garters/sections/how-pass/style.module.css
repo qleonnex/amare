@@ -1,0 +1,32 @@
+.inner {
+	@apply mt-[142px];
+}
+
+.cards {
+	@apply flex items-center justify-between mt-[42px] max-[476px]:mt-2;
+	@apply max-2xl:flex-col max-2xl:gap-[80px] max-md:gap-[100px] max-sm:gap-[60px] max-[476px]:gap-[0px];
+}
+
+.card {
+	@apply relative flex flex-col items-center max-w-[441px] h-[270px] pt-[70px] text-black text-[26px] font-medium text-center mt-[63px] flex-shrink-0 max-sm:scale-90 max-[476px]:scale-75 max-[476px]:w-[441px];
+	background-image: url("/images/card-bg.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+
+	&::after {
+		content: "";
+		@apply absolute -top-[63px] mx-auto flex items-center justify-center size-[98px] bg-primary rounded-full bg-no-repeat bg-center;
+	}
+
+	&:nth-child(1):after {
+		background-image: url("/icons/gg-logo.svg");
+	}
+
+	&:nth-child(2):after {
+		background-image: url("/icons/clock.svg");
+	}
+
+	&:nth-child(3):after {
+		background-image: url("/icons/chat.svg");
+	}
+}

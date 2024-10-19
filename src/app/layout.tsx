@@ -1,7 +1,6 @@
 import { RelationshipLayout } from "@/components/layouts/relationship"
 import { Metadata } from "next"
 import { Cormorant } from "next/font/google"
-import Head from 'next/head'
 import Script from 'next/script'
 import type { ReactNode } from "react"
 import "swiper/css"
@@ -23,17 +22,15 @@ export const metadata: Metadata = {
 	robots: {
 		follow: true,
 		index: true
+	},
+	icons: {
+		icon: "/icons/logo.svg"
 	}
 }
 
 export default function Layout({ children }: { children: ReactNode }) {
 	return (
 		<html>
-			<Head>
-				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<link rel="icon" href="/icons/logo.svg" type="image/svg+xml" />
-			</Head>
 			<body className={font.className}>
 				<RelationshipLayout>
 					{children}

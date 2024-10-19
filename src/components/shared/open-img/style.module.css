@@ -11,7 +11,7 @@
 	}
 
 	& .inner > img {
-		@apply block object-contain w-full h-min rounded-xl;
+		@apply block object-contain w-full h-full rounded-xl;
 	}
 }
 

@@ -24,6 +24,7 @@ export const Reviews = () => {
 				<Title>Отзывы клиентов</Title>
 				<div className={cs.reviews}>
 					<Swiper
+						className={cs.swiper}
 						onBeforeInit={(swiper) => {
 							swiperRef.current = swiper;
 						}}

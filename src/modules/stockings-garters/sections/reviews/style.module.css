@@ -3,13 +3,15 @@
 }
 
 .reviews {
-	@apply mt-[42px] px-6;
+	@apply mt-[42px] px-6 h-[251px];
+}
+
+.swiper {
+	@apply h-[280px] max-2xl:h-[240px] max-lg:h-[200px];
 }
 
 .slide {
-	@apply h-[280px] rounded-[26px] overflow-hidden border-[5px] border-primary max-2xl:h-[240px] max-lg:h-[200px];
-
-	border-color: linear-gradient(90deg, rgba(165,137,87,1) 0%, rgba(165,137,87,1) 100%);
+	@apply rounded-[26px] overflow-hidden border-[5px] border-primary max-md:border-[2px];
 }
 
 .slide img {
