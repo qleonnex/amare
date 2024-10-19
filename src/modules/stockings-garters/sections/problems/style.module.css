@@ -1,0 +1,7 @@
+.problems {
+	@apply p-[17px] border-2 border-[#4A4A4A] rounded-[17px] border-dashed mt-[159px];
+}
+
+.problems > span {
+	@apply block max-w-[800px] text-[24px] text-center font-medium mx-auto max-lg:text-[20px];
+}

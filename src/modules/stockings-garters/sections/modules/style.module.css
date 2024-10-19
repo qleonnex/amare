@@ -1,0 +1,33 @@
+.container_modules {
+	@apply mt-[142px];
+}
+
+.modules {
+	@apply flex flex-col gap-[46px] mt-[42px] max-sm:gap-[32px];
+}
+
+.slider {
+	@apply w-full flex;
+}
+
+.module {
+	@apply flex items-center justify-center w-full p-[42px] text-[28px] font-bold text-black text-center;
+	@apply max-md:text-[24px] max-sm:p-[26px];
+}
+
+.bottom {
+	@apply flex items-center gap-[60px] justify-between max-sm:gap-[30px]; 
+}
+
+.bottom button {
+	@apply flex justify-center items-center h-[74px] w-full bg-[#C8D0D4]/30 rounded-[18px] max-sm:h-[62px];
+}
+
+.bottom button:disabled {
+	@apply opacity-50;
+}
+
+.bottom span {
+	@apply text-[30px] font-bold text-primary whitespace-nowrap;
+	@apply max-md:hidden;
+}

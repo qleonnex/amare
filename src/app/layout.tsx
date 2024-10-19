@@ -1,8 +1,14 @@
 import { RelationshipLayout } from "@/components/layouts/relationship"
 import { Metadata } from "next"
 import { Cormorant } from "next/font/google"
+import Head from 'next/head'
 import Script from 'next/script'
 import type { ReactNode } from "react"
+import "swiper/css"
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import 'swiper/swiper-bundle.css'
 import "../assets/global.css"
 
 const font = Cormorant({
@@ -23,11 +29,11 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: ReactNode }) {
 	return (
 		<html>
-			<head>
+			<Head>
 				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<link rel="icon" href="/icons/logo.svg" type="image/svg+xml" />
-			</head>
+			</Head>
 			<body className={font.className}>
 				<RelationshipLayout>
 					{children}

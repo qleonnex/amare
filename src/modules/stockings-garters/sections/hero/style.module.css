@@ -1,0 +1,27 @@
+.hero {
+	@apply relative flex justify-between max-xl:justify-center max-md:flex-col;
+}
+
+.left {
+	@apply max-w-[672px] mt-[150px] mb-[177px] max-xl:text-center max-xl:flex max-xl:flex-col max-xl:items-center max-xl:max-w-max max-md:mb-[20px] ;
+}
+
+.left h1 {
+	@apply text-primary text-[64px] font-bold max-xl:text-[52px] max-lg:text-[42px]; 
+}
+
+.left p {
+	@apply text-[32px] font-medium mt-[20px] max-xl:text-[26px] max-lg:text-[22px];
+}
+
+.left button {
+	@apply mt-[46px];
+}
+
+.hero img:nth-child(2) {
+	@apply absolute -top-[120px] -right-60 max-xl:hidden;
+}
+
+.hero img:nth-child(3) {
+	@apply max-md:ml-[80px] max-sm:ml-[20px] md:hidden md:max-w-full;
+}

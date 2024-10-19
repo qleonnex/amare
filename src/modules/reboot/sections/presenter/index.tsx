@@ -1,9 +1,9 @@
-import { Card } from "@/components/ui/card";
-import cs from "./style.module.css";
-import { Container } from "@/components/shared/container";
-import { Title } from "@/components/ui/title";
-import Image from "next/image";
-import { Marck_Script } from "next/font/google";
+import { Container } from '@/components/shared'
+import { Card, Title } from '@/components/ui'
+import { Marck_Script } from "next/font/google"
+import Image from "next/image"
+
+import cs from "./style.module.css"
 
 const font = Marck_Script({
 	weight: ["400"],

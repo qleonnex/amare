@@ -1,8 +1,8 @@
-import { Container } from "@/components/shared/container";
-import cs from "./style.module.css";
-import { Title } from "@/components/ui/title";
-import { Card } from "@/components/ui/card";
-import { Cormorant } from "next/font/google";
+import { Container } from '@/components/shared'
+import { Card, Title } from '@/components/ui'
+import { Cormorant } from "next/font/google"
+
+import cs from "./style.module.css"
 
 const font = Cormorant({
 	weight: ["500"],

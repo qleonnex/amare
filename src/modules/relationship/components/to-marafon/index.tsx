@@ -1,9 +1,10 @@
 "use client";
 
-import { useToMarafon } from "@/modules/relationship/sections/hero/components/to-marafon/hook";
-import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
-import { Icon } from "@/components/ui/Icon";
+import { Button } from "@/components/ui/button"
+import { Icon } from "@/components/ui/icon"
+import { useEffect, useState } from "react"
+
+import { useToMarafon } from './hook'
 
 let windows = null;
 if (typeof window !== "undefined") {

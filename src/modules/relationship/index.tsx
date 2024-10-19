@@ -1,15 +1,15 @@
-import { Metadata } from "next";
-import { Hero } from "./sections/hero";
-import { Useful } from "@/modules/relationship/sections/useful";
-import { Program } from "@/modules/relationship/sections/program";
-import { Results } from "@/modules/relationship/sections/results";
-import { Presenter } from "@/modules/relationship/sections/presenter";
-import { Info } from "@/modules/relationship/sections/info";
-import { ToMarafon } from "@/modules/relationship/sections/hero/components/to-marafon";
+import { Metadata } from "next"
+
+import { Info, ToMarafon } from './components'
+
+import { Hero } from "./sections/hero"
+import { Presenter } from './sections/presenter'
+import { Program } from './sections/program'
+import { Results } from './sections/results'
+import { Useful } from './sections/useful'
 
 export const metadata: Metadata = {
 	title: "Amare | Как найти своего мужчину. Причины одиночества",
-	
 };
 
 export const RelationshipPage = () => {
@@ -33,7 +33,6 @@ export const RelationshipPage = () => {
 			<div className="flex justify-center mt-6">
 				<ToMarafon variant="light"/>
 			</div>
-			{/*<MarafonInfo />*/}
 		</div>
 	);
 }

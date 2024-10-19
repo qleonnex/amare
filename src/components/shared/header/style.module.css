@@ -7,7 +7,7 @@
 }
 
 .header_inner {
-	@apply flex items-center gap-6 mt-9 max-sm:justify-center;
+	@apply flex items-center justify-center gap-6 mt-9 max-sm:justify-center;
 }
 
 .name {

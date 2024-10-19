@@ -1,7 +1,6 @@
-import cs from "./style.module.css";
-import { Title } from "@/components/ui/title";
-import { Card } from "@/components/ui/card";
-import { Container } from "@/components/shared/container";
+import { Container } from "@/components/shared"
+import { Card, Title } from "@/components/ui"
+import cs from "./style.module.css"
 
 export const Useful = () => {
 	return (

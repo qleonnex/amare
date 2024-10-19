@@ -1,0 +1,17 @@
+.useful {
+	@apply rounded-[120px] max-sm:rounded-[50px];
+}
+
+.inner {
+	@apply flex flex-col items-center py-[95px];
+	@apply max-sm:py-[64px];
+	
+	& > ul {
+		@apply inline-flex flex-col gap-[39px] max-w-[1013px] text-[33px] text-black/80 list-disc list-inside font-semibold text-center mt-[60px];
+		@apply max-sm:text-[24px] max-sm:mt-[50px] max-lg:text-[28px];
+	}
+	
+	& > li {
+		@apply block;
+	}
+}

@@ -1,0 +1,7 @@
+.about_course {
+	@apply max-w-[901px] mt-[142px] mx-auto max-md:mt-[100px];
+}
+
+.about_course p {
+	@apply mt-[42px] text-white/80 text-[32px] font-medium text-center max-lg:text-[28px] max-md:text-[24px];
+}

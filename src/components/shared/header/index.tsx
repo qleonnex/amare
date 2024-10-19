@@ -1,6 +1,6 @@
-import cs from "./style.module.css";
-import { Icon } from "@/components/ui/Icon";
-import Link from "next/link";
+import { Icon } from "@/components/ui/icon"
+import Link from "next/link"
+import cs from "./style.module.css"
 
 export const Header = () => {
 	return (

@@ -1,0 +1,24 @@
+.opener {
+	@apply z-50 flex justify-center items-center absolute top-0 w-svw h-svh bg-black/60 overflow-hidden;
+
+	& button {
+		@apply absolute top-10 right-10
+	}
+
+	& .inner {
+		@apply flex items-center justify-center w-[45%] h-[80%] max-2xl:w-[60%] max-lg:w-[70%] max-md:w-[95%];
+		animation: open .3s;
+	}
+
+	& .inner > img {
+		@apply block object-contain w-full h-min rounded-xl;
+	}
+}
+
+@keyframes open {
+	from {
+		@apply scale-90;
+	} to {
+		@apply scale-100;
+	}
+}

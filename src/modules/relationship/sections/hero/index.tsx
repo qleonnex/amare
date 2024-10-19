@@ -1,9 +1,10 @@
-import cs from "./style.module.css";
-import { ToMarafon } from "@/modules/relationship/sections/hero/components/to-marafon";
-import { Marck_Script } from "next/font/google";
-import Image from "next/image";
-import { Container } from "@/components/shared/container";
-import { Info } from "@/modules/relationship/sections/info";
+import { Container } from '@/components/shared/container'
+import { Marck_Script } from "next/font/google"
+import Image from "next/image"
+
+import { Info } from '../../components/info'
+import { ToMarafon } from '../../components/to-marafon'
+import cs from "./style.module.css"
 
 const marckScript = Marck_Script({
 	weight: ["400"],
