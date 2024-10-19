@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button"
-import Icon from '@/components/ui/icon'
+import Icon from '@/components/ui/iconic'
 import { useEffect, useState } from "react"
 import { useToMarafon } from "./hook"
 

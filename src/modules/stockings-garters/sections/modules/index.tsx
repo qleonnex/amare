@@ -2,7 +2,7 @@
 
 import { Container } from '@/components/shared/container'
 import { Card } from '@/components/ui/card'
-import Icon from '@/components/ui/icon'
+import Icon from '@/components/ui/iconic'
 import { Title } from '@/components/ui/title'
 import { useSlider } from './hook'
 import cs from "./style.module.css"
