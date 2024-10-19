@@ -1,6 +1,6 @@
-import { Container } from '@/components/shared'
-import { Card, Title } from '@/components/ui'
-
+import { Container } from '@/components/shared/container'
+import { Card } from '@/components/ui/card'
+import { Title } from '@/components/ui/title'
 import cs from "./style.module.css"
 
 export const Useful = () => {

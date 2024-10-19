@@ -1,7 +1,7 @@
-import { Container } from '@/components/shared'
 import { Marck_Script } from "next/font/google"
 import Image from "next/image"
 
+import { Container } from '@/components/shared/container'
 import { ToMarafon } from '../../components/to-marafon'
 import { Info } from '../info'
 import cs from "./style.module.css"

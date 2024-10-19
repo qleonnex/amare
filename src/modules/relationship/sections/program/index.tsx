@@ -1,7 +1,8 @@
-import { Container } from "@/components/shared"
-import { Card, Title } from "@/components/ui"
 import { Cormorant } from "next/font/google"
 
+import { Container } from '@/components/shared/container'
+import { Card } from '@/components/ui/card'
+import { Title } from '@/components/ui/title'
 import cs from "./style.module.css"
 
 const font = Cormorant({

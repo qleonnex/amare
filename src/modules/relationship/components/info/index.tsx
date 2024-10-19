@@ -1,7 +1,7 @@
 "use client";
 
-import { Container } from "@/components/shared"
-import { Card } from "@/components/ui"
+import { Container } from '@/components/shared/container'
+import { Card } from '@/components/ui/card'
 import cs from "./style.module.css"
 
 export const Info = ({ className = "" }: { className?: string }) => {
