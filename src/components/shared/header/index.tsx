@@ -1,4 +1,4 @@
-import Icon from '@/components/ui/icon/Icon'
+import Icon from '@/components/ui/icon'
 import Link from "next/link"
 import cs from "./style.module.css"
 
