@@ -8,7 +8,7 @@ export const Useful = () => {
 		<Card className={cs.useful}>
 			<Container>
 				<div className={cs.inner}>
-					<Title variant="dark">Кому особенно будет полезен марафон</Title>
+					<Title variant="dark">Кому нужен этот курс</Title>
 					<ul>
 						<li>Решить проблему одиночества</li>
 						<li>Вернуть себе женскую силу и стать той женщиной, в которую влюбляются, уважают и боятся потерять</li>
