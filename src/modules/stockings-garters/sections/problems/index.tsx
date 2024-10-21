@@ -8,7 +8,7 @@ export const Problems = () => {
 		<Container>
 			<Link href="https://t.me/irisalika" target="_blank" className={cs.problems}>
 				<span>
-					Если у вас есть вопросы или сомнения по поводу тарифа, свяжись с куратором: вас сориентируют, ответят на ваши вопросы и помогут принять решение!
+					Если у вас есть вопросы или сомнения по поводу тарифа, свяжись с куратором в Telegram: вас сориентируют, ответят на ваши вопросы и помогут принять решение — <span className={cs.link}>@irisalika</span>
 				</span>
 				<Icon className={cs.icon} path="/icons/arrow-right.svg" size="32px" />
 			</Link>

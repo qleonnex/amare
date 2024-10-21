@@ -17,3 +17,7 @@
 .icon {
 	@apply absolute right-6 opacity-0 transition duration-300 -translate-x-2;
 }
+
+.link {
+	@apply bg-primary p-1 rounded-md;
+}
