@@ -1,14 +1,17 @@
 import { Container } from '@/components/shared/container'
+import Icon from '@/components/ui/iconic'
+import Link from 'next/link'
 import cs from './style.module.css'
 
 export const Problems = () => {
 	return (
 		<Container>
-			<div className={cs.problems}>
+			<Link href="https://t.me/irisalika" target="_blank" className={cs.problems}>
 				<span>
 					Если у вас есть вопросы или сомнения по поводу тарифа, свяжись с куратором: вас сориентируют, ответят на ваши вопросы и помогут принять решение!
 				</span>
-			</div>
+				<Icon className={cs.icon} path="/icons/arrow-right.svg" size="32px" />
+			</Link>
 		</Container>
 	);
 }
