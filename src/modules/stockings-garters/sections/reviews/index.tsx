@@ -8,7 +8,7 @@ import { Swiper as SwiperType } from 'swiper/types'
 import { Container } from '@/components/shared/container'
 import Icon from '@/components/ui/iconic'
 import { Title } from '@/components/ui/title'
-import { OpenerContext } from '@/provider/OpenerProvider'
+import { OpenerContext } from '@/modules/stockings-garters/providers/OpenerProvider'
 import { Controller } from 'swiper/modules'
 import cs from "./style.module.css"
 

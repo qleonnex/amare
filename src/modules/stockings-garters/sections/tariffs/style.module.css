@@ -18,7 +18,7 @@
 	}
 
 	& > .price {
-		@apply flex flex-col text-[46px] font-bold text-[#C68615] mt-[20px] max-sm:mt-[40px];
+		@apply flex flex-col text-[46px] font-bold text-[#C68615] mt-[10px] max-sm:mt-[40px];
 
 		& > span {
 			@apply line-through text-[#FF5A5A] leading-9;

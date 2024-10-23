@@ -1,6 +1,8 @@
 import { Metadata } from "next"
 
 
+import { OpenerProvider } from './providers/OpenerProvider'
+import { TariffYProvider } from './providers/TarifYProvider'
 import { AboutCourse } from './sections/about-course'
 import { Hero } from "./sections/hero"
 import { HowPass } from './sections/how-pass'
@@ -18,18 +20,22 @@ export const metadata: Metadata = {
 
 export const StockingsGartersPage = () => {
 	return (
-		<div>
-			<Hero/>
-			<Useful/>
-			<AboutCourse />
-			<Results />
-			<Modules />
-			<Reviews />
-			<HowPass />
-			<Presenter />
-			<Tariffs />
+		<OpenerProvider>
+			<TariffYProvider>
+				<div>
+					<Hero/>
+					<Useful/>
+					<AboutCourse />
+					<Results />
+					<Modules />
+					<Reviews />
+					<HowPass />
+					<Presenter />
+					<Tariffs />
 
-			<Problems />
-		</div>
+					<Problems />
+				</div>
+			</TariffYProvider>
+		</OpenerProvider>
 	);
 }
