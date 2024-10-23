@@ -23,5 +23,5 @@
 }
 
 .hero img:nth-child(3) {
-	@apply max-md:ml-[80px] max-sm:ml-[20px] md:hidden md:max-w-full;
+	@apply max-md:ml-[80px] max-sm:ml-[16px] md:hidden md:max-w-full;
 }

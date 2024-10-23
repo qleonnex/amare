@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 body {
-	@apply bg-[#2F3334] text-white;
+	@apply bg-[#2F3334] text-white overflow-x-hidden;
 	background-image: url("/images/bg.jpg");
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
-	overflow-x: hidden;
 }
