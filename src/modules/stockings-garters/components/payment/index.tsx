@@ -79,7 +79,7 @@ export const Payment = ({ isOpen, setIsOpen, paymentData }: PaymentProps) => {
 								required: "Это обязательное поле",
 								pattern: {
 									message: 'Неправильный формат номера телефона',
-									value: /^\+7\d{10}$/
+									value: /^\+\d{1,3}\d{4,14}$/
 								}
 							})}
 						/>
