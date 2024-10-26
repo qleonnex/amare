@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { PaymentDetail } from "../../providers/PaymentProvider";
+import Icon from "@/components/ui/iconic";
 
 interface PaymentProps {
 	isOpen: boolean;
@@ -26,10 +27,13 @@ if (typeof window !== "undefined") newWindow = window;
 
 export const Payment = ({ isOpen, setIsOpen, paymentData }: PaymentProps) => {
 	const [positionY, setPositionY] = useState(0);
+	const [isLoading, setIsLoading] = useState(false);
 	const { register, formState, handleSubmit } = useForm<FormData>()
 	const router = useRouter();
 	
 	async function onSubmit(data: FormData) {
+		setIsLoading(true);
+		
 		try {
 			const response = await fetch(
 				`https://amareladyschool.payform.ru/?do=link&products[0][name]=${paymentData.title}&products[0][price]=${paymentData.price}&products[0][quantity]=1&customer_phone=${data.phone}&customer_extra=${data.tg}&customer_email=${data.email}${paymentData.noInstalment ? "&available_payment_methods=AC|ACkz|ACkztjp|ACf|ACUSDSOM|SBP|QW|PC|GP|sbol|invoice|monetaworld" : ""}`
@@ -38,6 +42,8 @@ export const Payment = ({ isOpen, setIsOpen, paymentData }: PaymentProps) => {
 			router.replace(text);
 		} catch(e) {
 			console.error(e);
+		} finally {
+			setIsLoading(false);
 		}
 	}
 	
@@ -70,6 +76,11 @@ export const Payment = ({ isOpen, setIsOpen, paymentData }: PaymentProps) => {
 			<div className={cs.payment} style={{ top: positionY }} onClick={onClose}>
 				<div className={cs.inner}>
 					<h1>Внесение доп. данных</h1>
+					{isLoading && (
+						<div className={cs.loader}>
+							<Icon size="18px" path="/icons/loader.svg" className="animate-spin"/>
+						</div>
+					)}
 					<form className={cs.form} onSubmit={handleSubmit(onSubmit)}>
 						<Input
 							placeholder="Номер телефона"
