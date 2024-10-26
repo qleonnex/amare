@@ -4,9 +4,10 @@ import type { ReactNode } from "react";
 import { createContext, useState } from "react";
 import { Payment } from "@/modules/stockings-garters/components/payment";
 
-interface PaymentDetail {
+export interface PaymentDetail {
 	title: string;
 	price: number;
+	noInstalment?: boolean;
 }
 
 interface PaymentContextValue {
@@ -17,18 +18,20 @@ export const PaymentContext = createContext({} as PaymentContextValue);
 
 export const PaymentProvider = ({ children }: { children: ReactNode }) => {
 	const [isOpen, setIsOpen] = useState(false);
-	const [price, setPrice] = useState(0);
-	const [title, setTitle] = useState("");
+	const [paymentData, setPaymentData] = useState<PaymentDetail>({
+		title: "",
+		price: 0,
+		noInstalment: false,
+	});
 	
 	function openPayment(data: PaymentDetail) {
 		setIsOpen(true);
-		setPrice(data.price);
-		setTitle(data.title);
+		setPaymentData(data);
 	}
 	
 	return (
 		<PaymentContext.Provider value={{ openPayment }}>
-			<Payment isOpen={isOpen} setIsOpen={setIsOpen} price={price} title={title} />
+			<Payment isOpen={isOpen} setIsOpen={setIsOpen} paymentData={paymentData} />
 			{children}
 		</PaymentContext.Provider>
 	);

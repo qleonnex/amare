@@ -71,7 +71,7 @@ export const Tariffs = () => {
 						500.000₽
 					</p>
 					<button
-						onClick={() => openPayment({ title: "Тариф «Платина»", price: 500000 })}
+						onClick={() => openPayment({ title: "Тариф «Платина»", price: 500000, noInstalment: true })}
 					>
 						Приобрести
 					</button>

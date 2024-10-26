@@ -7,11 +7,12 @@ import cs from "./style.module.css";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
+import { PaymentDetail } from "../../providers/PaymentProvider";
+
 interface PaymentProps {
 	isOpen: boolean;
 	setIsOpen: Dispatch<SetStateAction<boolean>>;
-	title: string;
-	price: number;
+	paymentData: PaymentDetail;
 }
 
 interface FormData {
@@ -23,7 +24,7 @@ interface FormData {
 let newWindow: Window | null = null;
 if (typeof window !== "undefined") newWindow = window;
 
-export const Payment = ({ isOpen, setIsOpen, price, title }: PaymentProps) => {
+export const Payment = ({ isOpen, setIsOpen, paymentData }: PaymentProps) => {
 	const [positionY, setPositionY] = useState(0);
 	const { register, formState, handleSubmit } = useForm<FormData>()
 	const router = useRouter();
@@ -31,7 +32,7 @@ export const Payment = ({ isOpen, setIsOpen, price, title }: PaymentProps) => {
 	async function onSubmit(data: FormData) {
 		try {
 			const response = await fetch(
-				`https://amareladyschool.payform.ru/?do=link&products[0][name]=${title}&products[0][price]=${price}&products[0][quantity]=1&customer_phone=${data.phone}&customer_extra=${data.tg}&customer_email=${data.email}`
+				`https://amareladyschool.payform.ru/?do=link&products[0][name]=${paymentData.title}&products[0][price]=${paymentData.price}&products[0][quantity]=1&customer_phone=${data.phone}&customer_extra=${data.tg}&customer_email=${data.email}${paymentData.noInstalment ? "&available_payment_methods=AC|ACkz|ACkztjp|ACf|ACUSDSOM|SBP|QW|PC|GP|sbol|invoice|monetaworld" : ""}`
 			)
 			const text = await response.text();
 			router.replace(text);
@@ -108,7 +109,7 @@ export const Payment = ({ isOpen, setIsOpen, price, title }: PaymentProps) => {
 							})}
 						/>
 						<div>
-							<button disabled={formState.isLoading}>Оплатить {price}₽</button>
+							<button disabled={formState.isLoading}>Оплатить {paymentData.price}₽</button>
 							<p>Нажимая кнопку, вы соглашаетесь с офертой</p>
 						</div>
 					</form>
