@@ -1,12 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation"
-import { useEffect } from "react"
+import { useLayoutEffect } from "react";
 
 export default function RootPage() {
 	const router = useRouter();
 	
-	useEffect(() => {
+	useLayoutEffect(() => {
 		router.replace("/relationship")
 	}, []);
 	

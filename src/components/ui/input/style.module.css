@@ -1,0 +1,25 @@
+.input {
+	@apply bg-white/20 w-full text-lg h-[46px] rounded-lg p-3 outline-none border border-transparent transition duration-300;
+	
+	&::placeholder {
+		@apply text-white/60;
+	}
+	
+	&:hover,
+	&:focus {
+		@apply border-primary;
+	}
+	
+	&:disabled {
+		opacity: 0.5;
+	}
+	
+	&:disabled:hover,
+	&:disabled:focus {
+		@apply border-transparent;
+	}
+}
+
+.input ~ p {
+	@apply text-red-400 mt-0;
+}

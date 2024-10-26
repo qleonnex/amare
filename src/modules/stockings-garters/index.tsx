@@ -13,6 +13,7 @@ import { Results } from './sections/results'
 import { Reviews } from './sections/reviews'
 import { Tariffs } from './sections/tariffs'
 import { Useful } from './sections/useful'
+import { PaymentProvider } from "@/modules/stockings-garters/providers/PaymentProvider";
 
 export const metadata: Metadata = {
 	title: "Amare | Как найти своего мужчину. Причины одиночества",
@@ -21,21 +22,23 @@ export const metadata: Metadata = {
 export const StockingsGartersPage = () => {
 	return (
 		<OpenerProvider>
-			<TariffYProvider>
-				<div>
-					<Hero/>
-					<Useful/>
-					<AboutCourse />
-					<Results />
-					<Modules />
-					<Reviews />
-					<HowPass />
-					<Presenter />
-					<Tariffs />
-
-					<Problems />
-				</div>
-			</TariffYProvider>
+			<PaymentProvider>
+				<TariffYProvider>
+					<div>
+						<Hero/>
+						<Useful/>
+						<AboutCourse />
+						<Results />
+						<Modules />
+						<Reviews />
+						<HowPass />
+						<Presenter />
+						<Tariffs />
+	
+						<Problems />
+					</div>
+				</TariffYProvider>
+			</PaymentProvider>
 		</OpenerProvider>
 	);
 }

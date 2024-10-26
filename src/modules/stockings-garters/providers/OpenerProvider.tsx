@@ -1,6 +1,6 @@
 "use client"
 
-import { OpenImg } from '@/components/shared/open-img'
+import { OpenImg } from '../components/open-img'
 import { createContext, ReactNode, useState } from 'react'
 
 interface OpenContextReturn {
@@ -16,8 +16,6 @@ export const OpenerProvider = ({ children }: { children: ReactNode }) => {
 	function openImg(src: string) {
 		setSrc(src)
 		setIsOpen(true)
-		console.log("@");
-		
 	}
 
 	return (

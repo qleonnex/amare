@@ -4,10 +4,12 @@ import { Title } from '@/components/ui/title'
 import { useContext, useEffect, useRef } from 'react'
 import { TariffYContext } from '../../providers/TarifYProvider'
 import cs from "./style.module.css"
+import { PaymentContext } from "@/modules/stockings-garters/providers/PaymentProvider";
 
 export const Tariffs = () => {
 	const { setPositionY } = useContext(TariffYContext);
 	const innerRef = useRef<HTMLDivElement>(null);
+	const { openPayment } = useContext(PaymentContext);
 
 	useEffect(() => {
 		setPositionY(Number(innerRef.current?.offsetTop));
@@ -30,7 +32,11 @@ export const Tariffs = () => {
 						59.900₽
 					</p>
 					<span>Рассрочка 6 месяцев — 8.000₽/мес.</span>
-					<button>Приобрести</button>
+					<button
+						onClick={() => openPayment({ title: "Тариф «Серебро»", price: 59900 })}
+					>
+						Приобрести
+					</button>
 				</div>
 				<div className={cs.card}>
 					<h1>ЗОЛОТО</h1>
@@ -45,7 +51,11 @@ export const Tariffs = () => {
 						92.000₽
 					</p>
 					<span>Рассрочка 6 месяцев — 15.333₽/мес.</span>
-					<button>Приобрести</button>
+					<button
+						onClick={() => openPayment({ title: "Тариф «Золото»", price: 92000 })}
+					>
+						Приобрести
+					</button>
 				</div>
 				<div className={cs.card}>
 					<h1>ПЛАТИНА</h1>
@@ -60,7 +70,11 @@ export const Tariffs = () => {
 					<p className={cs.price}>
 						500.000₽
 					</p>
-					<button>Приобрести</button>
+					<button
+						onClick={() => openPayment({ title: "Тариф «Платина»", price: 500000 })}
+					>
+						Приобрести
+					</button>
 				</div>
 			</div>
 		</div>

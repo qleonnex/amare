@@ -1,0 +1,57 @@
+.payment {
+	@apply grid place-items-center z-50 absolute w-svw h-svh top-0 left-0 bg-black/60;
+}
+
+.inner {
+	@apply relative bg-[#2F3334] p-8 flex flex-col items-center rounded-2xl;
+	box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.3);
+	
+	& > h1 {
+		@apply text-2xl font-bold mb-6
+	}
+	
+	& > button {
+		@apply absolute right-4 top-4 opacity-30 transition duration-300;
+		
+		&:hover,
+		&:focus {
+			@apply opacity-80;
+		}
+	}
+	
+	animation: open .3s;
+}
+
+.form {
+	@apply flex flex-col gap-3;
+	
+	& button {
+		@apply bg-primary text-black text-[18px] w-full h-[46px] rounded-lg mt-3 transition duration-300 outline-none;
+		
+		&:hover,
+		&:focus {
+			box-shadow: 0px 0px 18px 0px rgba(218,186,129,0.5);
+		}
+		
+		&:disabled {
+			opacity: 0.5;
+		}
+		
+		&:disabled:hover,
+		&:disabled:focus {
+			box-shadow: 0px 0px 0px 0px rgba(218,186,129,0.5);
+		}
+	}
+	
+	& p {
+		@apply text-[16px] mt-2 opacity-80;
+	}
+}
+
+@keyframes open {
+	from {
+		@apply scale-90;
+	} to {
+		  @apply scale-100;
+	  }
+}
