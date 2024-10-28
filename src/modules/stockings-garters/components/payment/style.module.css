@@ -1,5 +1,5 @@
 .payment {
-	@apply grid place-items-center z-50 absolute w-svw h-svh top-0 left-0 bg-black/60;
+	@apply grid place-items-center z-50 absolute w-screen h-screen top-0 left-0 bg-black/60;
 }
 
 .inner {
