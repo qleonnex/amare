@@ -121,7 +121,6 @@ export const Payment = ({ isOpen, setIsOpen, paymentData }: PaymentProps) => {
 						/>
 						<div>
 							<button disabled={formState.isLoading}>Оплатить {paymentData.price}₽</button>
-							<p>Нажимая кнопку, вы соглашаетесь с <a className="underline" href="/files/offer.docx" download>офертой</a></p>
 						</div>
 					</form>
 					<button onClick={() => setIsOpen(false)}>✖</button>
