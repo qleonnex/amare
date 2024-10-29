@@ -36,10 +36,10 @@ export const Payment = ({ isOpen, setIsOpen, paymentData }: PaymentProps) => {
 		
 		try {
 			const response = await fetch(
-				`https://amareladyschool.payform.ru/?do=link&products[0][name]=${paymentData.title}&products[0][price]=${paymentData.price}&products[0][quantity]=1&customer_phone=${data.phone}&customer_extra=${data.tg}&customer_email=${data.email}${paymentData.noInstalment ? "&available_payment_methods=AC|ACkz|ACkztjp|ACf|ACUSDSOM|SBP|QW|PC|GP|sbol|invoice|monetaworld" : ""}`
+				`https://amareladyschool.payform.ru/?do=link&products[0][name]=${paymentData.title}&products[0][price]=${paymentData.price}&products[0][quantity]=1&customer_phone=${data.phone}&customer_extra=${data.tg}&customer_email=${data.email}${paymentData.noInstalment ? "installments_disabled=1" : ""}`
 			)
 			const text = await response.text();
-			router.replace(text);
+			router.push(text);
 		} catch(e) {
 			console.error(e);
 		} finally {

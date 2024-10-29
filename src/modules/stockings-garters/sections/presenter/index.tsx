@@ -16,7 +16,7 @@ export const Presenter = () => {
 		<Card className={cs.presenter}>
 			<Container>
 				<Title variant="dark">
-					О ведущей марафона
+					Эксперты
 				</Title>
 				<div className={cs.middle}>
 					<Image
@@ -26,7 +26,7 @@ export const Presenter = () => {
 						height={375}
 					/>
 					<div className={cs.right}>
-						<span>Эксперт психолог и коуч мужско-женских отношений</span>
+						<span>Эксперт психолог и коуч мужско-женских отношений, дипломированный психолог университета Paris 5 в 2005г.</span>
 						<h3>Живу в Париже и работаю с клиентами по всему миру. Помогаю создавать семейные пары и реанимировать уже существующие отношения</h3>
 						<p className={font.className}>- Рина Лазар</p>
 					</div>
