@@ -11,7 +11,7 @@ export const Info = ({ className = "" }: { className?: string }) => {
 				<div className={cs.left}>
 					<h4>Марафон проходит в закрытой группе Telegram</h4>
 					<div className={cs.left_bottom}>
-						<p>C 22 по 24 октября</p>
+						<p>C 12 по 14 ноября</p>
 						<p>Начало в 13ч МСК</p>
 					</div>
 				</div>
