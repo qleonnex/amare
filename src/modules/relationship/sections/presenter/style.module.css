@@ -11,6 +11,18 @@
 		@apply max-lg:flex max-lg:flex-col max-lg:items-center max-lg:text-center;
 	}
 	
+	& .left {
+		@apply flex flex-col gap-8;
+		
+		& > div {
+			@apply w-[366px] h-[375px] overflow-hidden rounded-3xl;
+			
+			& > img {
+				@apply w-full h-full object-cover;
+			}
+		}
+	}
+	
 	& img {
 		@apply max-sm:w-[204px] max-sm:h-[209px];
 	}

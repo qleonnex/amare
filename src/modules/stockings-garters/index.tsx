@@ -1,8 +1,7 @@
 import { Metadata } from "next"
 
 
-import { OpenerProvider } from './providers/OpenerProvider'
-import { TariffYProvider } from './providers/TarifYProvider'
+import { OpenerProvider } from '@/providers/OpenerProvider'
 import { AboutCourse } from './sections/about-course'
 import { Hero } from "./sections/hero"
 import { HowPass } from './sections/how-pass'
@@ -13,7 +12,8 @@ import { Results } from './sections/results'
 import { Reviews } from './sections/reviews'
 import { Tariffs } from './sections/tariffs'
 import { Useful } from './sections/useful'
-import { PaymentProvider } from "@/modules/stockings-garters/providers/PaymentProvider";
+import { PaymentProvider } from "./providers/PaymentProvider";
+import { TariffYProvider } from "./providers/TarifYProvider";
 
 export const metadata: Metadata = {
 	title: "Amare | Как найти своего мужчину. Причины одиночества",

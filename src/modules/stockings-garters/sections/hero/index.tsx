@@ -5,7 +5,7 @@ import { Container } from '@/components/shared/container'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { useContext } from 'react'
-import { TariffYContext } from '../../providers/TarifYProvider'
+import { TariffYContext } from '@/modules/stockings-garters/providers/TarifYProvider'
 import cs from "./style.module.css"
 
 export const Hero = () => {

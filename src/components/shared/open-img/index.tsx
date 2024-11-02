@@ -13,7 +13,6 @@ let newWindow: Window | null = null;
 if (typeof window !== "undefined") newWindow = window; 
 
 export const OpenImg = ({ src, isOpen, setIsOpen }: OpenImgProps) => {
-
 	const [scroll, setScroll] = useState(newWindow?.scrollY)
 
 	useEffect(() => {

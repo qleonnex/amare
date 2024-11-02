@@ -4,9 +4,10 @@ import { Info, ToMarafon } from './components'
 
 import { Hero } from "./sections/hero"
 import { Presenter } from './sections/presenter'
-import { Program } from './sections/program'
 import { Results } from './sections/results'
 import { Useful } from './sections/useful'
+import { Reviews } from "./sections/reviews";
+import { OpenerProvider } from "@/providers/OpenerProvider";
 
 export const metadata: Metadata = {
 	title: "Amare | Как найти своего мужчину. Причины одиночества",
@@ -14,14 +15,14 @@ export const metadata: Metadata = {
 
 export const RelationshipPage = () => {
 	return (
-		<div>
+		<OpenerProvider>
 			<Hero/>
 			<Useful/>
 			<div className="flex justify-center mt-6">
 				<ToMarafon variant="light"/>
 			</div>
-			<Program/>
-			<div className="flex justify-center mt-6">
+			<Reviews />
+			<div className="flex justify-center mt-14">
 				<ToMarafon variant="light"/>
 			</div>
 			<Results/>
@@ -33,6 +34,6 @@ export const RelationshipPage = () => {
 			<div className="flex justify-center mt-6">
 				<ToMarafon variant="light"/>
 			</div>
-		</div>
+		</OpenerProvider>
 	);
 }

@@ -1,7 +1,7 @@
 "use client"
 
-import { OpenImg } from '../components/open-img'
 import { createContext, ReactNode, useState } from 'react'
+import { OpenImg } from '@/components/shared/open-img'
 
 interface OpenContextReturn {
 	openImg: (src: string) => void

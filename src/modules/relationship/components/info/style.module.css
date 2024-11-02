@@ -1,10 +1,10 @@
 .info {
-	@apply !bg-primary relative z-50 flex justify-center items-center gap-6 p-[22px] rounded-xl text-black/80 border-4 border-second;
+	@apply !bg-primary relative z-50 flex justify-center max-w-[900px] mx-auto items-center gap-6 p-[22px] rounded-xl text-black/80 border-4 border-second;
 	box-shadow: 0px 0px 46px 3px rgba(0,0,0,0.17);
-	@apply max-sm:p-[16px];
+	@apply max-sm:p-[16px] max-lg:mx-8;
 }
 
-.left {
+.inner {
 	@apply flex flex-col justify-center items-center text-center;
 	
 	& h4 {

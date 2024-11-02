@@ -1,14 +1,14 @@
 .hero {
 	@apply relative max-xl:static flex justify-between;
-	@apply max-xl:flex-col;
+	@apply max-xl:flex-col max-xl:items-center;
 }
 
 .left {
-	@apply mt-[150px] mb-[204px];
-	@apply max-2xl:mb-[153px] max-xl:mb-[150px] max-xl:flex max-xl:flex-col max-xl:items-center max-sm:mb-[700px] max-sm:mt-[70px] max-[500px]:mb-[500px];
+	@apply max-w-[800px] mt-[110px] mb-[171px];
+	@apply max-2xl:mb-[33px] max-xl:mb-[150px] max-2xl:max-w-[600px] max-xl:flex max-xl:flex-col max-xl:items-center max-sm:mb-[700px] max-sm:mt-[70px] max-[500px]:mb-[500px];
 	
 	& > p {
-		@apply text-[34px] mb-[14px];
+		@apply text-[28px] mb-[14px];
 		@apply max-2xl:text-[26px] max-xl:text-center max-xl:text-[34px] max-lg:text-[26px] max-sm:text-[22px] max-[500px]:text-[18px];
 	}
 	

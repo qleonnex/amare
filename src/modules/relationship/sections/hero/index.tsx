@@ -16,10 +16,10 @@ export const Hero = () => {
 		<Container>
 			<div className={cs.hero}>
 				<div className={cs.left}>
-					<Info className="mb-10"/>
-					<p className={marckScript.className}>Рина Лазар, практикующий психолог и коуч</p>
+					<p className={marckScript.className}>Рина Лазар — дипломированный практикующий психолог и коуч мужско- женских отношений с опытом работы более  20 лет  </p>
 					<h1>Как найти своего мужчину. Причины одиночества</h1>
 					<ToMarafon variant="light"/>
+					<Info className="max-sm:!absolute max-sm:-bottom-44 mt-20 max-sm:mt-14"/>
 				</div>
 				<Image className={cs.image} src="/images/person.png" alt="Рина Лазар" width={1005} height={1350}/>
 				<Image className={cs.image_mob} src="/images/person-mobile.png" alt="Рина Лазар" width={1005} height={1350}/>

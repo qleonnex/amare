@@ -16,7 +16,7 @@ export const Reviews = () => {
 	const swiperRef = useRef<SwiperType>();
 	const [isBeginning, setIsBeginnig] = useState(true);
 	const [isEnd, setIsEnd] = useState(false);
-	const { openImg } = useContext(OpenerContext)
+	const { openImg } = useContext(OpenerContext);
 
 	return (
 		<Container>
@@ -48,9 +48,9 @@ export const Reviews = () => {
 							}
 						}}
 					>
-						{new Array(14).fill(0).map((_, i) => (
-							<SwiperSlide key={i} className={cs.slide} onClick={() => openImg(`/images/review-${i + 1}.jpg`)}>
-								<Image src={`/images/review-${i + 1}.jpg`} width={441} height={284} alt="Отзыв" />
+						{new Array(12).fill(0).map((_, i) => (
+							<SwiperSlide key={i} className={cs.slide} onClick={() => openImg(`/images/review-r-${i + 1}.jpg`)}>
+								<Image src={`/images/review-r-${i + 1}.jpg`} width={441} height={284} alt="Отзыв" />
 								<div>
 									<div className={cs.inner_module}>
 										<Icon
