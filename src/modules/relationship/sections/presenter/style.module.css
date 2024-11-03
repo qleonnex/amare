@@ -16,7 +16,7 @@
 	}
 	
 	& .left > div {
-		@apply min-w-[366px] min-h-[375px] overflow-hidden rounded-3xl;
+		@apply flex items-center justify-center w-[366px] max-h-[375px] overflow-hidden rounded-3xl;
 		
 		& > img {
 			@apply w-full h-full object-cover;
