@@ -16,7 +16,7 @@
 	}
 	
 	& .left > div {
-		@apply w-[366px] h-[375px] overflow-hidden rounded-3xl;
+		@apply min-w-[366px] min-h-[375px] overflow-hidden rounded-3xl;
 		
 		& > img {
 			@apply w-full h-full object-cover;
