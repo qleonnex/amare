@@ -2,10 +2,12 @@ import { Container } from '@/components/shared/container'
 import { Card } from '@/components/ui/card'
 import { Title } from '@/components/ui/title'
 import cs from "./style.module.css"
+import { Info } from "@/modules/relationship/components";
 
 export const Useful = () => {
 	return (
 		<Card className={cs.useful}>
+			<Info />
 			<Container>
 				<div className={cs.inner}>
 					<Title variant="dark">Кому особенно будет полезен марафон</Title>

@@ -1,9 +1,9 @@
 .useful {
-	@apply rounded-[120px] max-sm:rounded-[50px];
+	@apply rounded-[120px] max-sm:rounded-[50px] pt-8;
 }
 
 .inner {
-	@apply flex flex-col items-center py-[95px];
+	@apply flex flex-col items-center py-[50px];
 	@apply max-sm:py-[64px];
 	
 	& > ul {
