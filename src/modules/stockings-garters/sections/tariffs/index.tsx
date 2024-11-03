@@ -2,7 +2,7 @@
 
 import { Title } from '@/components/ui/title'
 import { useContext, useEffect, useRef } from 'react'
-import { TariffYContext } from '../../providers/TarifYProvider'
+import { TariffYContext } from '@/modules/stockings-garters/providers/TarifYProvider'
 import cs from "./style.module.css"
 import { PaymentContext } from "@/modules/stockings-garters/providers/PaymentProvider";
 
