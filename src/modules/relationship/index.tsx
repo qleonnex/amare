@@ -17,6 +17,7 @@ export const RelationshipPage = () => {
 	return (
 		<OpenerProvider>
 			<Hero/>
+			<Info className="-mb-16" />
 			<Useful/>
 			<div className="flex justify-center mt-6">
 				<ToMarafon variant="light"/>

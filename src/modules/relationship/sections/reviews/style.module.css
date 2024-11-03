@@ -3,15 +3,15 @@
 }
 
 .reviews {
-	@apply mt-[42px] px-6 h-[251px];
+	@apply mt-[42px] px-6;
 }
 
-.swiper {
-	@apply h-[280px] max-2xl:h-[240px] max-lg:h-[200px];
+.swiper > div {
+	@apply items-center;
 }
 
 .slide {
-	@apply rounded-[26px] overflow-hidden border-[5px] border-primary max-md:border-[2px];
+	@apply items-center rounded-[26px] overflow-hidden border-[5px] border-primary max-md:border-[2px];
 }
 
 .slide img {
@@ -35,19 +35,19 @@
 }
 
 .controllers {
-	@apply -mt-[170px] flex justify-between max-2xl:-mt-[150px] max-lg:-mt-[130px];
+	@apply flex justify-between mt-8;
 
 	& > button {
 		@apply relative z-20  flex justify-center items-center bg-primary w-[62px] h-[62px] rounded-full transition duration-300;
 	}
 
-	& > button:first-child {
-		@apply -ml-8;
-	}
-
-	& > button:last-child {
-		@apply -mr-8;
-	}
+	/* & > button:first-child { */
+	/* 	@apply -ml-8; */
+	/* } */
+	
+	/* & > button:last-child { */
+	/* 	@apply -mr-8; */
+	/* } */
 
 	& > button:disabled {
 		@apply opacity-0;
