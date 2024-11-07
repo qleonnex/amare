@@ -5,7 +5,7 @@
 
 .middle {
 	@apply flex items-center gap-[95px] px-[95px] mt-[60px] text-black/80;
-	@apply max-xl:px-[45px] max-xl:gap-[50px] max-lg:flex-col max-sm:mt-[45px] max-lg:gap-[42px] max-sm:gap-[27px] max-sm:px-10;
+	@apply max-xl:px-[45px] max-xl:gap-[50px] max-lg:flex-col max-sm:mt-[45px] max-lg:gap-[42px] max-sm:gap-[27px] max-sm:px-[20px] max-lg:px-[45px];
 	
 	& .right {
 		@apply max-lg:flex max-lg:flex-col max-lg:items-center max-lg:text-center max-sm:text-left max-sm:items-start;
