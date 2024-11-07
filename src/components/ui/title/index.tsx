@@ -1,15 +1,9 @@
 import cs from "./style.module.css";
-import { Cormorant } from "next/font/google";
 
 interface TitleProps {
 	children: string,
 	variant?: "light" | "dark",
 }
-
-// const font = Cormorant({
-// 	weight: "600",
-// 	subsets: ["cyrillic"],
-// })
 
 export const Title = ({
 	children,
