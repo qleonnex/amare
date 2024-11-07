@@ -9,12 +9,12 @@
 	
 	& h4 {
 		@apply text-[24px] font-semibold;
-		@apply max-lg:text-[24px] max-sm:text-[20px];
+		@apply max-lg:text-[20px] max-sm:text-[18px];
 	}
 	
 	& p {
 		@apply flex items-center text-[20px] font-medium;
-		@apply max-lg:text-[20px];
+		@apply max-lg:text-[16px];
 		
 		&:not(:last-child)::after {
 			content: "";

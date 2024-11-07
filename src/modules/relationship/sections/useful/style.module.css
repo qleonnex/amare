@@ -8,6 +8,6 @@
 	
 	& > ul {
 		@apply inline-flex flex-col gap-[39px] max-w-[1013px] text-[28px] pl-7 text-black/80 list-disc font-medium mt-[60px] list-outside;
-		@apply max-sm:text-[22px] max-sm:gap-[30px] max-sm:mt-[40px];
+		@apply max-sm:text-[20px] max-sm:gap-[30px] max-sm:mt-[40px] max-lg:text-[24px];
 	}
 }

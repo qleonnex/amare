@@ -8,7 +8,7 @@
 	
 	& h4 {
 		@apply text-[24px] font-medium text-center text-black/80;
-		@apply max-sm:text-[20px];
+		@apply max-sm:text-[18px] max-lg:text-[20px];
 	}
 	
 	&:last-child {

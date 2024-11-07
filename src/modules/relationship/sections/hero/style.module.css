@@ -5,7 +5,7 @@
 
 .left {
 	@apply max-w-[800px] mt-[268px] mb-[240px];
-	@apply max-2xl:max-w-[600px] max-2xl:mt-[200px] max-2xl:mb-[180px];
+	@apply max-2xl:max-w-[600px] max-2xl:mt-[160px] max-2xl:mb-[150px];
 	@apply max-xl:flex max-xl:flex-col max-xl:items-center max-xl:text-center max-xl:mt-[210px] max-xl:mb-[245px];
 	@apply max-sm:mb-[930px] max-sm:mt-[160px];
 	@apply max-[605px]:mt-[160px] max-[605px]:mb-[860px] max-[560px]:mb-[760px] max-[515px]:mb-[660px] max-[460px]:mb-[590px] max-[396px]:mb-[570px] max-[396px]:mt-[70px];
