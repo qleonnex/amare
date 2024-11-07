@@ -8,21 +8,17 @@
 	@apply flex flex-col justify-center items-center text-center;
 	
 	& h4 {
-		@apply text-[28px] font-semibold;
+		@apply text-[24px] font-semibold;
 		@apply max-lg:text-[24px] max-sm:text-[20px];
 	}
 	
 	& p {
-		@apply flex items-center text-[24px] font-medium;
+		@apply flex items-center text-[20px] font-medium;
 		@apply max-lg:text-[20px];
 		
 		&:not(:last-child)::after {
 			content: "";
 			@apply inline-block bg-black/80 size-[3px] rounded-full mx-[6px];
 		}
-	}
-	
-	& .left_bottom {
-		@apply flex items-center opacity-70;
 	}
 }

@@ -1,6 +1,6 @@
 import { RelationshipLayout } from "@/components/layouts/relationship"
 import { Metadata } from "next"
-import { Cormorant } from "next/font/google"
+import { Montserrat } from "next/font/google";
 import Script from 'next/script'
 import type { ReactNode } from "react"
 import "swiper/css"
@@ -10,7 +10,7 @@ import 'swiper/css/scrollbar'
 import 'swiper/swiper-bundle.css'
 import "../assets/global.css"
 
-const font = Cormorant({
+const font = Montserrat({
 	weight: ["400", "500", "600"],
 	subsets: ["latin", "cyrillic"]
 })

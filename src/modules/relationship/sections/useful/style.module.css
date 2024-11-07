@@ -3,15 +3,11 @@
 }
 
 .inner {
-	@apply flex flex-col items-center py-[50px];
+	@apply flex flex-col items-center py-[80px];
 	@apply max-sm:py-[64px];
 	
 	& > ul {
-		@apply inline-flex flex-col gap-[39px] max-w-[1013px] text-[33px] text-black/80 list-disc list-inside font-semibold text-center mt-[60px];
-		@apply max-sm:text-[24px] max-sm:mt-[50px] max-lg:text-[28px];
-	}
-	
-	& > li {
-		@apply block;
+		@apply inline-flex flex-col gap-[39px] max-w-[1013px] text-[28px] pl-7 text-black/80 list-disc font-medium mt-[60px] list-outside;
+		@apply max-sm:text-[22px] max-sm:gap-[30px] max-sm:mt-[40px];
 	}
 }

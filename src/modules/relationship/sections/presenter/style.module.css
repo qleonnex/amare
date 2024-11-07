@@ -16,7 +16,10 @@
 	}
 	
 	& .left > div {
-		@apply flex items-center justify-center w-[366px] max-h-[375px] overflow-hidden rounded-3xl;
+		@apply flex items-center justify-center size-[375px] overflow-hidden rounded-3xl;
+		@apply max-xl:mx-auto;
+		@apply max-lg:size-[300px];
+		@apply max-sm:size-[225px];
 		
 		& > img {
 			@apply w-full h-full object-cover;
@@ -25,16 +28,16 @@
 	
 	& span {
 		@apply text-2xl text-black/70 font-medium;
-		@apply max-sm:text-[21px];
+		@apply max-sm:text-[18px];
 	}
 	
 	& h3 {
-		@apply max-w-[691px] text-[32px] font-medium mt-[20px];
-		@apply max-sm:text-[25px];
+		@apply max-w-[691px] text-[28px] font-medium mt-[20px];
+		@apply max-sm:text-[20px];
 	}
 	
 	& p {
 		@apply text-[28px] mt-[30px];
-		@apply max-sm:text-[23px];
+		@apply max-sm:text-[16px];
 	}
 }

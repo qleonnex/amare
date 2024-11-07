@@ -3,7 +3,7 @@
 }
 
 .reviews {
-	@apply mt-[42px] px-6;
+	@apply mt-4 px-6;
 }
 
 .swiper > div {
