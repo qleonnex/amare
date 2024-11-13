@@ -5,28 +5,39 @@
 
 .middle {
 	@apply flex items-center gap-[95px] px-[95px] mt-[60px] text-black/80;
-	@apply max-xl:px-[45px] max-xl:gap-[50px] max-lg:flex-col max-sm:mt-[45px] max-lg:gap-[42px] max-sm:gap-[27px] max-sm:px-10;
+	@apply max-xl:px-[45px] max-xl:gap-[50px] max-lg:flex-col max-sm:mt-[45px] max-lg:gap-[42px] max-sm:gap-[27px] max-sm:px-[20px] max-lg:px-[45px];
 	
 	& .right {
-		@apply max-lg:flex max-lg:flex-col max-lg:items-center max-lg:text-center;
+		@apply max-lg:flex max-lg:flex-col max-lg:items-center max-lg:text-center max-sm:text-left max-sm:items-start;
 	}
 	
-	& img {
-		@apply max-sm:w-[204px] max-sm:h-[209px];
+	& .left {
+		@apply flex flex-col gap-8;
+	}
+	
+	& .left > div {
+		@apply flex items-center justify-center size-[375px] overflow-hidden rounded-3xl;
+		@apply max-xl:mx-auto;
+		@apply max-lg:size-[300px];
+		@apply max-sm:size-[225px];
+		
+		& > img {
+			@apply w-full h-full object-cover;
+		}
 	}
 	
 	& span {
-		@apply text-2xl text-black/70 font-medium;
-		@apply max-sm:text-[21px];
+		@apply text-[18px] text-black/70 font-medium;
+		@apply max-lg:text-[18px];
 	}
 	
 	& h3 {
-		@apply max-w-[691px] text-[32px] font-medium mt-[20px];
-		@apply max-sm:text-[25px];
+		@apply max-w-[691px] text-[28px] font-medium mt-[20px];
+		@apply max-sm:text-[20px] max-lg:text-[22px] max-xl:text-[24px];
 	}
 	
 	& p {
-		@apply text-[28px] mt-[30px];
-		@apply max-sm:text-[23px];
+		@apply text-[20px] mt-[30px];
+		@apply max-lg:text-[18px];
 	}
 }

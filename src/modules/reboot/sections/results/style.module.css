@@ -7,7 +7,11 @@
 	@apply grid place-content-center py-[30px] px-6;
 	
 	& h4 {
-		@apply text-[30px] font-medium text-center text-black/80;
-		@apply max-sm:text-[22px];
+		@apply text-[24px] font-medium text-center text-black/80;
+		@apply max-sm:text-[18px] max-lg:text-[20px];
+	}
+	
+	&:last-child {
+		@apply col-span-2 max-sm:col-span-1;
 	}
 }
