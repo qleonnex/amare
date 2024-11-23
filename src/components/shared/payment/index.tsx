@@ -7,7 +7,7 @@ import cs from "./style.module.css";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
-import { PaymentDetail } from "@/modules/stockings-garters/providers/PaymentProvider";
+import { PaymentDetail } from "@/providers/PaymentProvider";
 import Icon from "@/components/ui/iconic";
 
 interface PaymentProps {
