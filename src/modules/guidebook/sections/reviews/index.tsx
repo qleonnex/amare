@@ -10,7 +10,7 @@ import Icon from '@/components/ui/iconic'
 import { Title } from '@/components/ui/title'
 import { OpenerContext } from '@/providers/OpenerProvider'
 import { Controller } from 'swiper/modules'
-import cs from "./style.module.css"
+import cs from "./style.module.scss"
 
 export const Reviews = () => {
 	const swiperRef = useRef<SwiperType>();

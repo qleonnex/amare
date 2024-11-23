@@ -1,6 +1,6 @@
 "use client"
 
-import cs from "./style.module.css";
+import cs from "./style.module.scss";
 import { usePathname } from "next/navigation";
 
 export const Footer = () => {

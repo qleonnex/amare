@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import cs from "./style.module.css";
+import cs from "./style.module.scss";
 
 export const Container = ({ children }: { children: ReactNode }) => {
 	return (

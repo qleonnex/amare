@@ -1,6 +1,6 @@
 import Icon from '@/components/ui/iconic'
 import Link from "next/link"
-import cs from "./style.module.css"
+import cs from "./style.module.scss"
 
 export const Header = () => {
 	return (

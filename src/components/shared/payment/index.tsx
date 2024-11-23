@@ -3,7 +3,7 @@
 import { Dispatch, SetStateAction, useEffect, useLayoutEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
-import cs from "./style.module.css";
+import cs from "./style.module.scss";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";

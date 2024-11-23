@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
-import cs from './style.module.css'
+import cs from './style.module.scss'
 
 
 interface OpenImgProps {

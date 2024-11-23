@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { useContext } from 'react'
 import { TariffYContext } from '@/providers/TarifYProvider'
-import cs from "./style.module.css"
+import cs from "./style.module.scss"
 
 export const Hero = () => {
 	const { positionY } = useContext(TariffYContext);
