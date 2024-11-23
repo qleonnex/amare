@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	title: "Amare | Как найти своего мужчину. Причины одиночества",
 };
 
-export const StockingsGartersPage = () => {
+export const GuidebookPage = () => {
 	return (
 		<div>
 			<Hero/>

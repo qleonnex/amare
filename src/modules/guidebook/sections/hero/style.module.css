@@ -3,7 +3,7 @@
 }
 
 .left {
-	@apply max-w-[672px] mt-[200px] mb-[245px] max-xl:text-center max-xl:flex max-xl:flex-col max-xl:items-center max-xl:max-w-max max-md:mb-[20px] ;
+	@apply max-w-[672px] mt-[263px] mb-[290px] max-xl:text-center max-xl:flex max-xl:flex-col max-xl:items-center max-xl:max-w-max max-md:mb-[20px] ;
 }
 
 .left h1 {

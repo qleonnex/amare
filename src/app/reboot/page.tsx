@@ -1,11 +1,11 @@
-import { RebootPage } from "@/modules/reboot";
 import { Metadata } from "next";
+import { RebootPage } from "@/modules/reboot";
 
 export const metadata: Metadata = {
-	title: "Amare — Любовь перезагрузка. От горя к радости в отношениях",
-	description: "Любовь перезагрузка. От горя к радости в отношениях"
+	title: "Amare — Путеводитель настоящей леди",
+	description: "Путеводитель настоящей леди: Как стать магнитом для мужчин и удачно выйти за муж"
 };
 
 export default function Reboot() {
-	return <RebootPage/>;
+	return <RebootPage />;
 }

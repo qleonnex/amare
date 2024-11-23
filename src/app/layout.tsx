@@ -9,6 +9,9 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import 'swiper/swiper-bundle.css'
 import "../assets/global.css"
+import { OpenerProvider } from "@/providers/OpenerProvider";
+import { TariffYProvider } from "@/providers/TarifYProvider";
+import { PaymentProvider } from "@/providers/PaymentProvider";
 
 const font = Montserrat({
 	weight: ["400", "500", "600"],
@@ -32,9 +35,15 @@ export default function Layout({ children }: { children: ReactNode }) {
 	return (
 		<html>
 			<body className={font.className}>
-				<RelationshipLayout>
-					{children}
-				</RelationshipLayout>
+				<OpenerProvider>
+					<TariffYProvider>
+						<PaymentProvider>
+							<RelationshipLayout>
+								{children}
+							</RelationshipLayout>
+						</PaymentProvider>
+					</TariffYProvider>
+				</OpenerProvider>
 
 				<Script
 					id="facebook-pixel"

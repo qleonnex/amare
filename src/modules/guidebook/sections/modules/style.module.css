@@ -11,8 +11,16 @@
 }
 
 .module {
-	@apply flex items-center justify-center w-full p-[42px] text-[24px] font-medium text-black text-center;
+	@apply flex flex-col w-full p-[42px] text-[24px] font-medium text-black;
 	@apply max-md:text-[20px] max-sm:p-[18px];
+	
+	& > h1 {
+		@apply text-second font-bold;
+	}
+	
+	& > p {
+		@apply mt-4;
+	}
 }
 
 .bottom {

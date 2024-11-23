@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react";
 import { createContext, useState } from "react";
-import { Payment } from "@/modules/stockings-garters/components/payment";
+import { Payment } from "@/components/shared/payment";
 
 export interface PaymentDetail {
 	title: string;
