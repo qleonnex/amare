@@ -1,7 +1,7 @@
 
 import { Container } from '@/components/shared/container'
 import { Title } from '@/components/ui/title'
-import cs from "./style.module.css"
+import cs from "./style.module.scss"
 
 export const AboutCourse = () => {
 	return (

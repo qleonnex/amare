@@ -3,7 +3,7 @@
 import { Title } from '@/components/ui/title'
 import { useContext, useEffect, useRef } from 'react'
 import { TariffYContext } from '@/providers/TarifYProvider'
-import cs from "./style.module.css"
+import cs from "./style.module.scss"
 import { PaymentContext } from "@/providers/PaymentProvider";
 
 export const Tariffs = () => {

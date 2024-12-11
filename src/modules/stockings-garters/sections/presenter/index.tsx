@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Container } from '@/components/shared/container'
 import { Card } from '@/components/ui/card'
 import { Title } from '@/components/ui/title'
-import cs from "./style.module.css"
+import cs from "./style.module.scss"
 
 export const Presenter = () => {
 	return (
