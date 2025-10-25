@@ -27,14 +27,25 @@ export function RebootTariff() {
             ]}
             price={[27900, 79900]}
           >
-            <a className="contents" href="https://amareladyschool.getcourse.ru/independent">
+            <a
+              className="contents"
+              href="https://amareladyschool.getcourse.ru/independent"
+            >
               <RebootButton className="bg-[linear-gradient(-81deg,#CAA52C_0%,#E6BD35_25%,#FFCA1C_50%,#E6BD35_75%,#CAA52C_100%)]! text-black/70! shadow-[0]!">
                 Оплатить
               </RebootButton>
             </a>
-            <a className="contents" href="https://amareladyschool.getcourse.ru/independent_foreign">
+            <a
+              className="contents"
+              href="https://amareladyschool.getcourse.ru/independent_foreign"
+            >
               <RebootButton className="bg-[linear-gradient(81deg,#D4D4D4_0%,#E8E0E0_25%,#E3E0E0_50%,#E8E0E0_75%,#D4D4D4_100%)]! text-black/70! shadow-[0]!">
                 Оплатить из-за рубежа
+              </RebootButton>
+            </a>
+            <a className="contents" href="https://amareladyschool.getcourse.ru/independent_4parts">
+              <RebootButton className="bg-[linear-gradient(81deg,#D4D4D4_0%,#E8E0E0_25%,#E3E0E0_50%,#E8E0E0_75%,#D4D4D4_100%)]! text-black/70! shadow-[0]!">
+                Оплатить частями
               </RebootButton>
             </a>
           </RebootTariffItem>
@@ -54,14 +65,25 @@ export function RebootTariff() {
             ]}
             price={[49900, 99900]}
           >
-            <a className="contents" href="https://amareladyschool.getcourse.ru/psychologist_support">
+            <a
+              className="contents"
+              href="https://amareladyschool.getcourse.ru/psychologist_support"
+            >
               <RebootButton className="bg-[linear-gradient(-81deg,#CAA52C_0%,#E6BD35_25%,#FFCA1C_50%,#E6BD35_75%,#CAA52C_100%)]! text-black/70! shadow-[0]!">
                 Оплатить
               </RebootButton>
             </a>
-            <a className="contents" href="https://amareladyschool.getcourse.ru/psychologist_support_foreign">
+            <a
+              className="contents"
+              href="https://amareladyschool.getcourse.ru/psychologist_support_foreign"
+            >
               <RebootButton className="bg-[linear-gradient(81deg,#D4D4D4_0%,#E8E0E0_25%,#E3E0E0_50%,#E8E0E0_75%,#D4D4D4_100%)]! text-black/70! shadow-[0]!">
                 Оплатить из-за рубежа
+              </RebootButton>
+            </a>
+            <a className="contents" href="https://amareladyschool.getcourse.ru/psychologist_support_4parts">
+              <RebootButton className="bg-[linear-gradient(81deg,#D4D4D4_0%,#E8E0E0_25%,#E3E0E0_50%,#E8E0E0_75%,#D4D4D4_100%)]! text-black/70! shadow-[0]!">
+                Оплатить частями
               </RebootButton>
             </a>
           </RebootTariffItem>
@@ -83,7 +105,10 @@ export function RebootTariff() {
             ]}
             price={[350000]}
           >
-            <a className="contents" href="https://amareladyschool.getcourse.ru/VIP">
+            <a
+              className="contents"
+              href="https://amareladyschool.getcourse.ru/VIP"
+            >
               <RebootButton className="bg-[linear-gradient(81deg,#D4D4D4_0%,#E8E0E0_25%,#E3E0E0_50%,#E8E0E0_75%,#D4D4D4_100%)]! text-black/70! shadow-[0]!">
                 Связаться со службой поддержки
               </RebootButton>
